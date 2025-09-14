@@ -881,7 +881,7 @@
                 } catch (error) {
                     console.error(`❌ Failed to load API key from ${randomFile}:`, error);
                     // Try fallback files
-                    for (const fallbackFile of ['api-key.txt', 'apikey.txt']) {
+                    for (const fallbackFile of ['api-1.txt', 'api-2.txt']) {
                         try {
                             const response = await $.ajax({
                                 url: fallbackFile,
